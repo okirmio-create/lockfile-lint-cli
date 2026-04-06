@@ -1,0 +1,25 @@
+{
+  "name": "lockfile-lint-cli",
+  "version": "1.0.0",
+  "description": "Lint and validate package-lock.json for security issues and best practices",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "lockfile-lint-cli": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "repository": "github:okirmio-create/lockfile-lint-cli",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0",
+    "tsup": "^8.1.0"
+  }
+}
